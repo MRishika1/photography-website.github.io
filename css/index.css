@@ -1,0 +1,16 @@
+.topnav{
+    background-image: url("img/home.jpg");
+    min-height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    font-weight: bold;
+    margin: 0px;
+}
+.content{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding-top: 25%;
+}

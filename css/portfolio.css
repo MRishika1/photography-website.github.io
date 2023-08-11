@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+  
+.flex-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 30%;
+    height: 600px;
+    background-size: cover;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+.flex-left:hover{
+    border: 5px solid white;
+    opacity:10;
+}
+
+.flex-middle {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 30%;
+    height: 600px;
+    background-size: cover;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+.flex-middle:hover{
+    border: 5px solid white;
+    opacity: 10;
+}
+
+.flex-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 30%;
+    height: 600px;
+    background-size: cover;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+.flex-right:hover{
+    border: 5px solid white;
+    opacity: 10;
+}
+
+@media (max-width: 800px) {
+    .flex-middle, .flex-right, .flex-left {
+      flex: 100%;
+    }
+}

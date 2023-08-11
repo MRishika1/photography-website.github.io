@@ -1,0 +1,142 @@
+h2{
+   margin: 20px;
+}
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: .3s;
+	
+	&:hover &__image {
+		filter: grayscale(1);
+	}
+	
+	&__column {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+	}
+	
+	&__link {
+		margin: 2px;
+		overflow: hidden;
+		
+		&:hover {
+			.gallery__image {
+				filter: grayscale(0);
+			}
+			
+			.gallery__caption {
+				opacity: 1;
+			}
+		}
+	}
+	
+	&__thumb {
+		position: relative;
+	}
+	
+	&__image {
+		display: block;
+		width: 100%;
+		transition: .3s;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	
+	&__caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 25px 15px 15px;
+		width: 100%;
+		font-family: 'Raleway', sans-serif;
+		font-size: 16px;
+		color: white;
+		opacity: 0;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;
+	}
+}
+.gallery__thumb img{
+    width: 330px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+p{
+    margin: 20px;
+    padding: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+  
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+* {
+	box-sizing: border-box;
+}
+  
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 30px;
+	text-align: center;
+}
+  
+.flex-item-left {
+	padding: 10px;
+	flex: 50%;
+}
+  
+.flex-item-right {
+	padding: 10px;
+	flex: 50%;
+}
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+	.flex-item-right, .flex-item-left {
+	  flex: 100%;
+	}
+}
+
+label{
+	text-align: justify;
+}
+
+input{
+	border: none;
+	border-bottom: 2px solid black;
+}
+
+textarea{
+	border: none;
+	border-bottom: 2px solid black;
+}
+
+button{
+	width: 50%;
+	background-color: none;
+}
+
+button:hover{
+	background-color: black;
+	border: 2px solid black;
+	color: white;
+}
